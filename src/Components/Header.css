@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(36, 37, 43);
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(1, 136, 170);
+
+  --x-offset: -0.0625em;
+  --y-offset: 0.0625em;
+  --stroke: 0.025em;
+  --background-color: white;
+  --stroke-color: lightblue;
+
+  text-shadow: var(--x-offset) var(--y-offset) 0px var(--background-color),
+    calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke))
+      0px var(--stroke-color);
+}
+
+.header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header p {
+  margin: 20px;
+  padding: 5px 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.active {
+  background-color: rgb(1, 136, 170);
+  border-radius: 20px;
+}
