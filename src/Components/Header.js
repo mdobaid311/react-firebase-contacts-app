@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <div className="header">
-      <p className="logo">Contact App</p>
+      <p className="logo">Contacts App</p>
       <div className="header-right">
         <Link to="/">
           <p
