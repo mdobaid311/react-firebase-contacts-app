@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../firebase";
 import { collection, getDocs, doc, deleteDoc } from "firebase/firestore";
+import { Link } from "react-router-dom";
 
 import "./Home.css";
 
@@ -40,7 +41,9 @@ const Home = () => {
                 <td>{contact.email}</td>
                 <td>{contact.contact}</td>
                 <td>
-                  <button>Update</button>
+                  <Link to={`update/${contact.id}`}>
+                    <button>Update</button>
+                  </Link>
                 </td>
                 <td>
                   <button
